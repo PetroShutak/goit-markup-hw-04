@@ -137,6 +137,8 @@ body {
   padding-top: 192px;
   padding-bottom: 192px;
   text-align: center;
+  background-image: url(../images/bg-hero.jpg);
+  background-size: cover;
 }
 .hero__heading {
   font-weight: 700;
@@ -196,7 +198,7 @@ body {
   gap: 24px;
 }
 .adv_gap {
- flex-basis: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 .advantage_section {
   padding-top: 120px;
