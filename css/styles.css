@@ -21,6 +21,7 @@
   --button_potrfolio_color: #4d5ae5;
   --button_portfolio_bgr: #f4f4fd;
   --description_footer_color: #e7e9fc;
+  --title_color_footer: #ffffff;
 }
 h1,
 h2,
@@ -137,7 +138,11 @@ body {
   padding-top: 192px;
   padding-bottom: 192px;
   text-align: center;
-  background-image: url(../images/bg-hero.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/bg-hero.jpg);
   background-size: cover;
 }
 .hero__heading {
@@ -203,6 +208,28 @@ body {
 .advantage_section {
   padding-top: 120px;
 }
+.adventage_icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+.adv_border_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  background-color: #f4f4fd;
+  width: 264px;
+  height: 112px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+.icon_adv {
+  display: flex;
+  align-items: center;
+}
+/* ---------Our Team------- */
 .team {
   background-color: var(--team_bgr);
 }
@@ -256,6 +283,46 @@ body {
   padding-bottom: 32px;
 }
 
+/* ------------OUR TEAM ---------------*/
+.social_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social_link_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.social_link_list:hover,
+.social_link_list:focus {
+  background-color: #31d0aa;
+}
+.social_list_item:not(:last-child) {
+  margin-right: 24px;
+}
+.social_link_icon {
+  fill: #f4f4fd;
+}
+.social_link_icon:hover,
+.social_link_icon:focus {
+  fill: #4d5ae5;
+}
+
+/* ---------CUSTOMERS----------- */
+.customers_icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 72px;
+}
+
 /* ----FOOTER--- */
 .logo_footer {
   font-family: "Raleway", sans-serif;
@@ -285,6 +352,24 @@ body {
   width: 264px;
   margin-top: 16px;
 }
+.left_side_footer {
+  display: flex;
+  align-items: center;
+}
+.title_social {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--title_color_footer);
+  text-align: center;
+}
+.social_media {
+  width: 200px;
+}
+/* .footer_social_link {
+  background-color: rgba(255, 255, 255, 0.1);
+} */
 
 /* -----PORTFOLIO------ */
 
