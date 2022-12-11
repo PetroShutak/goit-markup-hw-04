@@ -205,19 +205,20 @@ body {
 .adv_gap {
   flex-basis: calc((100% - 72px) / 4);
 }
-.advantage_section {
+/* .advantage_section {
   padding-top: 120px;
-}
+} */
 .adventage_icon {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 120px;
+  margin-bottom: 8px;
 }
 .adv_border_icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
   margin-top: 12px;
   background-color: #f4f4fd;
   width: 264px;
@@ -225,9 +226,13 @@ body {
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
+
 .icon_adv {
+  width: 64px;
+  height: 64px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 /* ---------Our Team------- */
 .team {
@@ -321,6 +326,35 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-top: 72px;
+  gap: 24px;
+  fill: currentColor;
+}
+.customers_border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+.cust_fill {
+  fill: currentColor;
+}
+.cust_logo {
+  color: #8e8f99;
+}
+.cust_logo:hover,
+.cust_logo:focus {
+  color: #4d5ae5;
+}
+
+.customers_border:hover,
+.customers_border:focus {
+  color: #4d5ae5;
+  border: 1px solid #4d5ae5;
+  border-radius: 4px;
 }
 
 /* ----FOOTER--- */
@@ -352,24 +386,37 @@ body {
   width: 264px;
   margin-top: 16px;
 }
-.left_side_footer {
-  display: flex;
-  align-items: center;
-}
 .title_social {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--title_color_footer);
-  text-align: center;
+  /* text-align: center; */
 }
 .social_media {
-  width: 200px;
+  width: 208px;
+  height: 80px;
+  margin-left: 120px;
 }
-/* .footer_social_link {
+.footer_for {
+  display: flex;
+  align-items: baseline;
+}
+.footer_social_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-} */
+}
+.footer_social_link:hover,
+.footer_social_link:focus {
+  background-color: #31d0aa;
+}
 
 /* -----PORTFOLIO------ */
 
